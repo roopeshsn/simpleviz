@@ -2,7 +2,7 @@
 
 A simple chart visualizer with an extendable plugin system to add API sources.
 
-<img src="./public/demo.png">
+<img src="./public/simpleviz.png">
 
 ## To add a plugin
 
