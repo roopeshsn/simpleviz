@@ -2,6 +2,8 @@
 
 A simple chart visualizer with an extendable plugin system to add API sources.
 
+<img src="./public/demo.png">
+
 ## To add a plugin
 
 1. Write a logic to return an array of objects from your data source. An object in a format of,
