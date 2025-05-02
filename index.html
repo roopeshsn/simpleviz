@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SimpleViz</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Graphy</h1>
+    <select id="assetSelector">
+      <option value="">Select an option</option>
+    </select>
+    <canvas id="priceChart" width="600" height="400"></canvas>
+  </div>
+  <script src="./src/main.js"></script>
+  <script src="./src/plugins/goldAPIPlugin.js"></script>
+  <script src="./src/plugins/alphaVantagePlugin.js"></script>
+  <script>
+    registerPlugin(createGoldAPIPlugin());
+    registerPlugin(createAlphaVantagePlugin("ANET", "ANET"));
+    registerPlugin(createAlphaVantagePlugin("TEJASNET.BSE", "TEJASNET"));
+  </script>
+</body>
+</html>
